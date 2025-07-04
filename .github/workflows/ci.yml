@@ -1,0 +1,13 @@
+name: Dummy CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Echo message
+        run: echo "✅ GitHub Actions ran successfully!"
